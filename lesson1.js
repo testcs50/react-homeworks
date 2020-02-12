@@ -1,6 +1,10 @@
+//Task 1
+
 const loop = (times=0, callback=null) => {
     for (let i = 0; i < times; i++) callback()
 }
+
+//Task 2
 
 const calculateArea = (figure, a, b) => {
     let area = 0;
@@ -21,6 +25,8 @@ const calculateArea = (figure, a, b) => {
         input: { a, b }
     }
 }
+
+//Task 3
 
 class Human {
     constructor(params) {
@@ -87,6 +93,7 @@ class Developer extends Employee {
 
 }
 
+//Task 4
 
 const promisesArray = []
 
