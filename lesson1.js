@@ -1,7 +1,9 @@
 //Task 1
 
 const loop = (times=0, callback=null) => {
-    for (let i = 0; i < times; i++) callback()
+    if (callback) {
+        for (let i = 0; i < times; i++) callback();
+    }
 }
 
 //Task 2
