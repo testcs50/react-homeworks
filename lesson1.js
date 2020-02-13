@@ -106,6 +106,8 @@ for (let i = 1; i <= 10; i++) {
 }
 
 promisesArray.forEach(item => {
-    item.then(response => response.json)
-        .then(data => console.log(data))
-})
+    item.then(response => console.log(response.json()))
+        .catch(err => {
+            throw new Error(err);
+        });
+});
